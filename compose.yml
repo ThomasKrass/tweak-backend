@@ -1,3 +1,5 @@
 services:
   streaming-server:
     image: tiangolo/nginx-rtmp
+    ports:
+      - 1935:1935

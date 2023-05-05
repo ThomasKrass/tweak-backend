@@ -1,5 +1,6 @@
 services:
   streaming-server:
-    image: tiangolo/nginx-rtmp
+    build: "."
     ports:
       - 1935:1935
+      - 80:80

@@ -5,6 +5,6 @@
   "author": "Thomas Kraß",
   "license": "MIT",
   "scripts": {
-    "start": "docker compose up"
-  } 
+    "start": "docker compose up --build"
+  }
 }

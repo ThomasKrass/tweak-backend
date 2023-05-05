@@ -1,0 +1,3 @@
+services:
+  streaming-server:
+    image: tiangolo/nginx-rtmp

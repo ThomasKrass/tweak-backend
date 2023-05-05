@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "name": "master-thesis-prototype-backend",
+  "version": "1.0.0",
+  "author": "Thomas Kraß",
+  "license": "MIT",
+  "scripts": {
+    "start": "docker compose up"
+  } 
+}

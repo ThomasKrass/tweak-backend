@@ -11,7 +11,7 @@ steps:
   - '--image'
   - 'gcr.io/master-thesis-prototype/streaming-server'
   - '--region'
-  - 'global'
+  - 'europe-west3'
   - '--platform'
   - 'managed'
 images:

@@ -1,0 +1,68 @@
+{
+  "elements": [
+    {
+      "identifier": "digital_captured_content",
+      "instanceId": "gameplay-id",
+      "title": "Game",
+      "config": {
+        "isEnabled": true,
+        "location": { "x0": 0, "y0": 0, "x1": 1, "y1": 1 },
+        "layer": 0,
+        "volume": 0.5
+      },
+      "attributes": [
+        {
+          "identifier": "video_source",
+          "resources": {
+            "videoStream": {
+              "sourceX": 0,
+              "sourceY": 0,
+              "sourceWidth": 1920,
+              "sourceHeight": 1080
+            }
+          }
+        },
+        {
+          "identifier": "audio_source",
+          "resources": {
+            "audioStream": {
+              "channels": [0]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "streamer_representation",
+      "instanceId": "webcam-id",
+      "title": "Streamer",
+      "config": {
+        "isEnabled": true,
+        "location": { "x0": 0.05, "y0": 0.05, "x1": 0.35, "y1": 0.35 },
+        "layer": 1,
+        "volume": 0.75
+      },
+      "attributes": [
+        {
+          "identifier": "video_source",
+          "resources": {
+            "videoStream": {
+              "sourceX": 1920,
+              "sourceY": 0,
+              "sourceWidth": 1180,
+              "sourceHeight": 664
+            }
+          }
+        },
+        {
+          "identifier": "audio_source",
+          "resources": {
+            "audioStream": {
+              "channels": [1]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

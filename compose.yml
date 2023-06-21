@@ -1,6 +1,10 @@
 services:
   streaming-server:
-    build: "."
+    build: "./streaming-server"
     ports:
       - 1935:1935
       - 80:80
+  config-server:
+    build: "./config-server"
+    ports:
+      - 8080:80

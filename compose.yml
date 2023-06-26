@@ -8,3 +8,9 @@ services:
     build: "./config-server"
     ports:
       - 8080:80
+  event-bridge:
+    build: "./event-bridge"
+    environment:
+      - PORT=80
+    ports:
+      - 8081:80

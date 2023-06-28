@@ -12,7 +12,7 @@
   "type": "module",
   "scripts": {
     "start": "npm run prod",
-    "dev": "cross-env NODE_ENV=development node --experimental-specifier-resolution=node dist/index.js",
+    "dev": "npm run build && cross-env NODE_ENV=development node --experimental-specifier-resolution=node dist/index.js",
     "prod": "cross-env NODE_ENV=production node --experimental-specifier-resolution=node dist/index.js",
     "build": "tsc",
     "format": "prettier --write .",
@@ -20,6 +20,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@fastify/cors": "8.3.0",
     "cross-env": "7.0.3",
     "dotenv": "16.3.1",
     "fastify": "4.18.0",

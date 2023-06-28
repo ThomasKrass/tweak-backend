@@ -1,3 +1,4 @@
+import CORS from '@fastify/cors'
 import DotEnv from 'dotenv'
 import Fastify from 'fastify'
 import FastifySocketIO from 'fastify-socket.io'
@@ -14,8 +15,20 @@ const server = Fastify({
 
 const port = Number(process.env.PORT) || 80
 
+// Register plugins and routes
+server.register(CORS, {
+  origin: true,
+  methods: ['GET', 'POST'],
+})
+
+server.register(FastifySocketIO, {
+  cors: {
+    origin: true,
+    methods: ['GET', 'POST'],
+  },
+})
+
 server.register(routes)
-server.register(FastifySocketIO)
 
 server.listen({ port, host: '0.0.0.0' }, (error, address) => {
   if (error) {
@@ -29,7 +42,6 @@ server.listen({ port, host: '0.0.0.0' }, (error, address) => {
 server.ready((error) => {
   if (error) throw error
 
-  // Access Socket.io instance via 'server.io'
   server.io.on('connection', (socket) => {
     server.log.info('New client connected')
 

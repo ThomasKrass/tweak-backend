@@ -6,6 +6,8 @@ services:
       - 80:80
   config-server:
     build: "./config-server"
+    volumes:
+      - ./config-server/configs/default.json:/usr/share/nginx/html/configs/default.json 
     ports:
       - 8080:80
   event-bridge:

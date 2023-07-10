@@ -17,8 +17,8 @@
             "videoStream": {
               "sourceX": 0,
               "sourceY": 0,
-              "sourceWidth": 1920,
-              "sourceHeight": 1080
+              "sourceWidth": 800,
+              "sourceHeight": 600
             }
           }
         },
@@ -35,7 +35,7 @@
     {
       "identifier": "streamer_representation",
       "instanceId": "webcam-id",
-      "title": "Streamer",
+      "title": "Webcam",
       "config": {
         "isEnabled": true,
         "location": { "x0": 0.05, "y0": 0.05, "x1": 0.35, "y1": 0.35 },
@@ -47,10 +47,10 @@
           "identifier": "video_source",
           "resources": {
             "videoStream": {
-              "sourceX": 1920,
+              "sourceX": 0,
               "sourceY": 0,
-              "sourceWidth": 1180,
-              "sourceHeight": 664
+              "sourceWidth": 800,
+              "sourceHeight": 600
             }
           }
         },

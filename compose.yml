@@ -7,7 +7,7 @@ services:
   config-server:
     build: "./config-server"
     volumes:
-      - ./config-server/configs/default.json:/usr/share/nginx/html/configs/default.json 
+      - ./config-server/configs:/usr/share/nginx/html/configs
     ports:
       - 8080:80
   event-bridge:

@@ -1,0 +1,36 @@
+{
+  "elements": [
+    {
+      "identifier": "streamer_representation",
+      "instanceId": "webcam-id",
+      "title": "Webcam",
+      "config": {
+        "isEnabled": true,
+        "location": { "x0": 0.0, "y0": 0.0, "x1": 1, "y1": 1 },
+        "layer": 1,
+        "volume": 1
+      },
+      "attributes": [
+        {
+          "identifier": "video_source",
+          "resources": {
+            "videoStream": {
+              "sourceX": 0,
+              "sourceY": 0,
+              "sourceWidth": 800,
+              "sourceHeight": 600
+            }
+          }
+        },
+        {
+          "identifier": "audio_source",
+          "resources": {
+            "audioStream": {
+              "channels": [1]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

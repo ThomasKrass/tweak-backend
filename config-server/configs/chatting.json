@@ -15,10 +15,10 @@
           "identifier": "video_source",
           "resources": {
             "videoStream": {
-              "sourceX": 0,
-              "sourceY": 0,
-              "sourceWidth": 800,
-              "sourceHeight": 600
+              "x0": 0,
+              "y0": 0,
+              "x1": 1,
+              "y1": 1
             }
           }
         },

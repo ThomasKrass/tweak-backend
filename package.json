@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "name": "tweak-backend",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Thomas Kraß",
+  "homepage": "https://github.com/ThomasKrass/tweak#readme",
+  "scripts": {
+    "start": "docker compose up --build"
+  }
+}
